@@ -180,24 +180,64 @@
 //Write a c program to calculate the sum of numbers from 1 to n:
 //Write a c program to calculate the sum of numbers from 1 to 10:
 //Write a c program to display odd numbers to 1 to n:
+//#include<stdio.h>
+//int main()
+//{
+//	int i=1,n;
+//	printf("Enter Any Number:");
+//	scanf("%d",&n);
+//	while(i<=n)
+//	{
+//		if(i%2!=0)
+//		printf("This Is Odd Numbers:%d\n",i);
+//		else
+//		printf("This Is Even Numbers:%d\n",i);
+//		i++;
+//	}
+//}
+//Write a c program to find the sum of the following series:
+//Factorial!
+//#include<stdio.h>
+//int main()
+//{
+//	int i=1,n,mul=1;
+//	printf("Enter Any Number:");
+//	scanf("%d",&n);
+//	while(n>=i)
+//	{
+//		mul*=n;
+//		n--;
+//	}
+//	printf("The Factorial is=%d",mul);
+//}
+//write  a C programe to find the sum of the following series1!+3!+5!.....upto n numbers*/
+//1! =1
+//3!=3*2*1=6
+//5!=5*4*3*1=120
+//upto n !
 #include<stdio.h>
 int main()
 {
-	int i=1,n;
-	printf("Enter Any Number:");
+	int i=1, c=1,a=1,n;
+	long int fact,sum=0;
+	printf("enter the number of terms:");
 	scanf("%d",&n);
-	while(i<=n)
-	{
-		if(i%2!=0)
-		printf("This Is Odd Numbers:%d\n",i);
-		else
-		printf("This Is Even Numbers:%d\n",i);
-		i++;
+	
+	while(c<=n){
+		i=1;
+		fact=1;
+		while(i<=a){
+			fact=fact*i;
+			i++;
+		}
+		sum=sum+fact;
+		c++;
+		a=a+2;
 	}
+	printf("sum of the numbers=%d",sum);
+	return 0;
 }
-
-
-
+   
 
 
 
