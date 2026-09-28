@@ -239,23 +239,43 @@
 //}
 
 //2+5+8+11+14...Upto n terms W.C.P to calculate sum of the given series:
+//#include<stdio.h>
+//int main()
+//{
+//	int n;
+//	int i=2;
+//	int sum=0;
+//	printf("Enter The value of n:");
+//	scanf("%d",&n);
+//	while(i<=n)
+//	{
+//		sum+=i;
+//		i+=3;
+//	}
+//	printf("The sum is:%d\n",sum);
+//	return 0;
+//}
+//1+2+4+7+11...Upto n terms W.C.P to calculate sum of the given series:
 #include<stdio.h>
 int main()
 {
 	int n;
-	int i=2;
+	int i=1;
 	int sum=0;
+	int term=1,d=1;
 	printf("Enter The value of n:");
 	scanf("%d",&n);
 	while(i<=n)
 	{
-		sum+=i;
-		i+=3;
+		printf("%d\t",term);
+		sum=sum+term;
+		term=term+d;
+		d++;
+		i++;
 	}
 	printf("The sum is:%d\n",sum);
 	return 0;
 }
-
 
 
 
