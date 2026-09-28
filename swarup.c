@@ -215,29 +215,45 @@
 //3!=3*2*1=6
 //5!=5*4*3*1=120
 //upto n !
+//#include<stdio.h>
+//int main()
+//{
+//	int i=1, c=1,a=1,n;
+//	long int fact,sum=0;
+//	printf("enter the number of terms:");
+//	scanf("%d",&n);
+//	
+//	while(c<=n){
+//		i=1;
+//		fact=1;
+//		while(i<=a){
+//			fact=fact*i;
+//			i++;
+//		}
+//		sum=sum+fact;
+//		c++;
+//		a=a+2;
+//	}
+//	printf("sum of the numbers=%d",sum);
+//	return 0;
+//}
+//2+5+8+11+14...Upto n terms W.C.P to calculate sum of the given series:
 #include<stdio.h>
 int main()
 {
-	int i=1, c=1,a=1,n;
-	long int fact,sum=0;
-	printf("enter the number of terms:");
+	int n;
+	int i=2;
+	int sum=0;
+	printf("Enter The value of n:");
 	scanf("%d",&n);
-	
-	while(c<=n){
-		i=1;
-		fact=1;
-		while(i<=a){
-			fact=fact*i;
-			i++;
-		}
-		sum=sum+fact;
-		c++;
-		a=a+2;
+	while(i<=n)
+	{
+		sum+=i;
+		i+=3;
 	}
-	printf("sum of the numbers=%d",sum);
+	printf("The sum is:%d\n",sum);
 	return 0;
 }
-   
 
 
 
