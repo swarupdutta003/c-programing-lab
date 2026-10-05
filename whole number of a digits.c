@@ -2,15 +2,14 @@
 #include<stdio.h>
 int main()
 {
-	int num,temp,sum=0;
+	int num,count=0,s;
 	printf("Enter Any Digit:");
 	scanf("%d",&num);
 	while(num!=0)
 	{
-		temp=num%10;
-		sum=sum+num;
-		num=num/10;
+     	num=num/10;
+		count++;
 	}
-	printf("The whole number of the digit is=%d",temp);
+	printf("The whole number of the digit is=%d",count);
 }
 
