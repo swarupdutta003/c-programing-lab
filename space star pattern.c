@@ -1,0 +1,25 @@
+//Write a c program to print this following pattern:
+//   *
+//  **
+// ***
+//****
+#include<stdio.h>
+int main()
+{
+	int i,n,j;
+	printf("Enter the range:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+		{
+			printf("\t");
+		}
+		for(j=1;j<=i;j++)
+		{
+		 printf("\t*");
+	    }
+		printf("\n\n");
+	}
+	return 0;
+}
